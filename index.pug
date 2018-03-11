@@ -1,0 +1,55 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title Weather
+    link(rel='stylesheet prefetch', href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css')
+    link(rel='stylesheet', href='css/style.css')
+  body
+    .container
+      .row
+        header.col-md-12.text-center
+          h1 Weather  APP
+        .weatherInfo.col-md-8.offset-md-2
+          .text-box.text-center
+            p
+              span#city  
+              span#country  
+            p
+              span#temp
+              span#tempChange.temp
+            p
+              span#weather
+          .weatherIcons.text-center
+            .icon.sun-shower.hide
+              .cloud
+              .sun
+                .rays
+              .rain
+            .icon.thunder-storm.hide
+              .cloud
+              .lightning
+                .bolt
+                .bolt
+            .icon.cloudy.hide
+              .cloud
+              .cloud
+            .icon.flurries.hide
+              .cloud
+              .snow
+                .flake
+                .flake
+            .icon.sunny.hide
+              .sun
+                .rays
+            .icon.rainy.hide
+              .cloud
+              .rain
+          p.text-center.small
+            | Inspired By
+            a(href='https://codepen.io/joshbader/full/EjXgqr/', target='_blank')  Joshbader
+          p.text-center.small
+            | Yahoo!
+            a(href='https://www.yahoo.com/news/weather', target='_blank')  Weather
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+    script(src='js/index.js')
